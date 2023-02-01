@@ -1,4 +1,4 @@
-var Skill = require('../models/todo');
+var Skill = require('../models/skill');
 
 module.exports = {
     index,
@@ -13,6 +13,6 @@ function show(req, res) {
 
 function index(req, res) {
     res.render('skills/index', {
-        skills: skill.getAll()
+        skills: Skill.getAll()
     });
 }
