@@ -6,7 +6,7 @@ module.exports = {
 };
 
 function show(req, res) {
-    res.render('skills/show', {
+    res.render('skills/shows', {
         skill: Skill.getOne(req.params.id)
     });
 }
