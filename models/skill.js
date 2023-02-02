@@ -10,7 +10,7 @@ const skills = [
     getOne,
     create,
     deleteOne,
-    Update
+    update
   };
 	
   function update(id, updatedSkill) {
