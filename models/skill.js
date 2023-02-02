@@ -2,9 +2,10 @@ const skills = [
     {id: 112452, skill: 'HTML', started: true},
     {id: 212356, skill: 'CSS', started: true},
     {id: 312467, skill: 'Javascript', started: true},
-    {id: 412758, skill: 'Nope.js', started: true},
+    {id: 412758, skill: 'Node.js', started: true},
     {id: 509870, skill: 'Python', started: false}
   ];
+
   module.exports = {
     getAll,
     getOne,

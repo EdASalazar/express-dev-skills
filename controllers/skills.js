@@ -20,9 +20,8 @@ module.exports = {
     res.render('skills/edit', {
       title: 'Edit Skill',
       skill
-  });
-    
-  }
+    });
+ }
   
   
   function deleteSkill(req, res) {
