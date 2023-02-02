@@ -11,6 +11,7 @@ module.exports = {
   };
 
   function update(req, res) {
+    req.body.started = !!req.body.started;
     Skill.update(req.params.id, req.body);
     res.redirect(`/skills/${req.params.id}`);
   }

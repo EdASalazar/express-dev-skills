@@ -14,8 +14,8 @@ const skills = [
     update
   };
 	
+
   function update(id, updatedSkill) {
-    // req.body.started = !!req.body.started;
     id = parseInt(id);
     const skill = skills.find(skill => skill.id === id);
     Object.assign(skill, updatedSkill);
@@ -23,7 +23,7 @@ const skills = [
   
   function deleteOne(id) {
     id = parseInt(id);
-      // Finde the index of the skill
+    // Finde the index of the skill
     const idx = skills.findIndex(skill => skill.id === id);
     skills.splice(idx, 1);
   }
