@@ -31,7 +31,6 @@ module.exports = {
   }
 
 function create(req, res) {
-    console.log(req.body);
     Skill.create(req.body);
     res.redirect('/skills');
 }
