@@ -1,5 +1,4 @@
 var express = require('express');
-//factory function. Used to create something
 var router = express.Router();
 var skillsCtrl = require('../controllers/skills');
 
