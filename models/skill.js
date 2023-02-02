@@ -15,7 +15,7 @@ const skills = [
   };
 	
   function update(id, updatedSkill) {
-    req.body.started = !!req.body.started;
+    // req.body.started = !!req.body.started;
     id = parseInt(id);
     const skill = skills.find(skill => skill.id === id);
     Object.assign(skill, updatedSkill);
