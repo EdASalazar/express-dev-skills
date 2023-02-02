@@ -15,14 +15,15 @@ module.exports = {
     res.redirect(`/skills/${req.params.id}`);
   }
 
-  function edit(req, res) {
+  function edit(req, res){
     const skill = Skill.getOne(req.params.id);
     res.render('skills/edit', {
       title: 'Edit Skill',
       skill
   });
-
+    
   }
+  
   
   function deleteSkill(req, res) {
     Skill.deleteOne(req.params.id);
